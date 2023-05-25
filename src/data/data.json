@@ -1,0 +1,66 @@
+{
+    "books": [
+        {
+            "id": 0,
+            "name": "The Catcher in the Rye",
+            "description": "The story of a teenage boy named Holden Caulfield who has been expelled from prep school.",
+            "author": "J.D. Salinger"
+        },
+        {
+            "id": 1,
+            "name": "To Kill a Mockingbird",
+            "description": "The story takes place in Alabama in the 1930s, and is narrated by the main character, a little girl named Scout Finch.",
+            "author": "Harper Lee"
+        },
+        {
+            "id": 2,
+            "name": "1984",
+            "description": "A dystopian novel set in a totalitarian society.",
+            "author": "George Orwell"
+        },
+        {
+            "id": 3,
+            "name": "Pride and Prejudice",
+            "description": "A classic novel about the relationships between the Bennet sisters and their suitors.",
+            "author": "Jane Austen"
+        },
+        {
+            "id": 4,
+            "name": "The Great Gatsby",
+            "description": "The story of Jay Gatsby, a self-made millionaire, and his pursuit of Daisy Buchanan, a wealthy young woman whom he loved in his youth.",
+            "author": "F. Scott Fitzgerald"
+        }
+    ],
+    "users":[
+        {
+            "id": 0,
+            "name": "Alice",
+            "lastname": "Smith",
+            "library": [0, 1]
+        },
+        {
+            "id": 1,
+            "name": "Bob",
+            "lastname": "Jones",
+            "library": [1, 3]
+        },
+        {
+            "id": 2,
+            "name": "Charlie",
+            "lastname": "Brown",
+            "library": [2, 4]
+        },
+        {
+            "id": 3,
+            "name": "David",
+            "lastname": "Johnson",
+            "library": [0]
+        },
+        {
+            "id": 4,
+            "name": "Eve",
+            "lastname": "Davis",
+            "library": [3]
+        }
+    ]
+}

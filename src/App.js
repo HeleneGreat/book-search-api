@@ -1,25 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './composants/Header';
+import Users from './composants/Users';
+import Livres from './composants/Livres';
+import Accueil from './composants/Accueil';
+import Search from './composants/Search';
+import {useState} from "react";
 
-function App() {
+function App(props) {
+  const [currentPage, setCurrentPage] = useState('');
+
+  function handleChangeMenu(cible){
+    setCurrentPage(cible);
+    console.log("App" + cible);
+  }
+
+  let content;
+  if(currentPage == "users"){
+    content = <Users/>;
+  }else if(currentPage == "books"){
+    content = <Livres/>;
+  }else if(currentPage == "search"){
+    content = <Search/>;
+  }else{
+    content = <Accueil/>;
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header onChoixMenu={handleChangeMenu}/>
+      {content}
     </div>
   );
 }
+
+
 
 export default App;

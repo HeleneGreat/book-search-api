@@ -1,9 +1,13 @@
+:root{
+  --bleu: #6bd4f9;
+}
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 50px;
   pointer-events: none;
 }
 
@@ -25,7 +29,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--bleu);
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +39,77 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: peru;
+}
+button{
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+h1{
+  text-align: center;
+  margin: 20px 0 10px;
+  color: var(--bleu);
+}
+
+.header{
+  width: 100%;
+  background-color: purple;
+  padding: 20px 0;
+}
+.header .presentation{
+  display: flex;
+  align-items: center;
+}
+
+.header .app-title{
+  font-size: 25px;
+  display: block;
+  color: var(--bleu);
+}
+
+.header .menu ul{
+  width: 80%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .menu button{
+  font-size: 20px;
+  color: var(--bleu);
+}
+.header .menu button:hover{
+  color: white;
+}
+
+
+.form-control{
+  max-width: 400px;
+  margin-right: 20px;
+}
+.btn{
+  background-color: var(--bleu);
+  transition: all ease-in-out .2s;
+}
+.btn:hover{
+  background-color: var(--bleu);
+  box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.1);
+}
+.btn:focus{
+  background-color: var(--bleu)!important;
+  border: none;
+  box-shadow: inset 0px 0px 5px 3px rgba(0,0,0,0.1);
+}
+.btn, .form-control{
+  display: inline;
 }
